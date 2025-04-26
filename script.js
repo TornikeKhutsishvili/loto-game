@@ -110,11 +110,22 @@ function StartGames(){
     btn_restart.style.marginTop = "20px"
 
     win_number_btn1.style.display = "inline-block"
+    win_number_btn1.style.textAlign = "center"
+
     win_number_btn2.style.display = "inline-block"
+    win_number_btn2.style.textAlign = "center"
+
     win_number_btn3.style.display = "inline-block"
+    win_number_btn3.style.textAlign = "center"
+
     win_number_btn4.style.display = "inline-block"
+    win_number_btn4.style.textAlign = "center"
+
     win_number_btn5.style.display = "inline-block"
+    win_number_btn5.style.textAlign = "center"
+
     win_number_btn6.style.display = "inline-block"
+    win_number_btn6.style.textAlign = "center"
 
     Win.style.display = "block"
     choiseText.style.display = "block"
