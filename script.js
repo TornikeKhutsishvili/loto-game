@@ -46,12 +46,12 @@ while(newarr.length != 6){
     if(newarr.indexOf(rand) == -1){
         newarr.push(rand)
         for(i=0; i < 6; i++){
-            win_number_btn1.innerHTML = newarr[1];
-            win_number_btn2.innerHTML = newarr[2];
-            win_number_btn3.innerHTML = newarr[3];
-            win_number_btn4.innerHTML = newarr[4];
-            win_number_btn5.innerHTML = newarr[5];
-            win_number_btn6.innerHTML = newarr[6];
+            win_number_btn1.innerHTML = newarr[0];
+            win_number_btn2.innerHTML = newarr[1];
+            win_number_btn3.innerHTML = newarr[2];
+            win_number_btn4.innerHTML = newarr[3];
+            win_number_btn5.innerHTML = newarr[4];
+            win_number_btn6.innerHTML = newarr[5];
         }
     }
 }
