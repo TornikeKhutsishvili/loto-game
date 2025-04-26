@@ -1,7 +1,8 @@
+var btn_number = document.querySelectorAll('.btn_number')
+var winSpan = document.querySelectorAll('.winSpan')
 
 var btn_start = document.querySelector('.btn_start')
 var btn_restart = document.querySelector('.btn_restart')
-var btn_number = document.querySelectorAll('.btn_number')
 var win_number_btn1 = document.querySelector('.win_number_btn1')
 var win_number_btn2 = document.querySelector('.win_number_btn2')
 var win_number_btn3 = document.querySelector('.win_number_btn3')
@@ -12,7 +13,6 @@ var win_h1 = document.querySelector('.win_h1')
 var win_h3 = document.querySelector('.win_h3')
 var lose_h1 = document.querySelector('.lose_h1')
 var winSpan = document.querySelectorAll('.winSpan')
-var choiseNumb = document.querySelector('.choiseNumb')
 var choiseText = document.querySelector('.choiseText')
 var Win = document.querySelector('.Win')
 
@@ -46,12 +46,12 @@ while(newarr.length != 6){
     if(newarr.indexOf(rand) == -1){
         newarr.push(rand)
         for(i=0; i < 6; i++){
-            win_number_btn1.innerHTML = newarr[0]
-            win_number_btn2.innerHTML = newarr[1]
-            win_number_btn3.innerHTML = newarr[2]
-            win_number_btn4.innerHTML = newarr[3]
-            win_number_btn5.innerHTML = newarr[4]
-            win_number_btn6.innerHTML = newarr[5]
+            win_number_btn1.innerHTML = newarr[1];
+            win_number_btn2.innerHTML = newarr[2];
+            win_number_btn3.innerHTML = newarr[3];
+            win_number_btn4.innerHTML = newarr[4];
+            win_number_btn5.innerHTML = newarr[5];
+            win_number_btn6.innerHTML = newarr[6];
         }
     }
 }
@@ -73,7 +73,7 @@ function StartGames(){
             for(var j = 0; j < newarr1.length; j++){
                 if(newarr[i] == newarr1[j]){
                     winner++
-                } 
+                }
             }
         }
     }
@@ -105,7 +105,7 @@ function StartGames(){
     }
 
     choiseText.style.marginTop = "10px"
-    
+
     btn_start.style.display = "none"
     btn_restart.style.marginTop = "20px"
 
@@ -115,7 +115,7 @@ function StartGames(){
     win_number_btn4.style.display = "inline-block"
     win_number_btn5.style.display = "inline-block"
     win_number_btn6.style.display = "inline-block"
-    
+
     Win.style.display = "block"
     choiseText.style.display = "block"
 
