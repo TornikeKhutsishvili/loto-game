@@ -1,8 +1,9 @@
 // Imports
 import { states } from "./state.js"
 import {
-    lose_h1, choiseText, btn_start, btn_restart, win_number, win, win_h1, win_h3, choiseNumb
+    lose_h1, choiseText, btn_start, btn_restart, win_number, win, win_h1, win_h3, choiseNumb, btn_number
 } from "./variables.js"
+
 
 // Exports functions
 export function startGames() {
@@ -62,13 +63,22 @@ export function startGames() {
     stopGame()
 }
 
+
 export function restartGames() {
+    localStorage.removeItem("clicked_numbers")
     location.reload()
-    myP2.textContent = "Restart"
 }
 
+
 export function stopGame() {
+    localStorage.removeItem("clicked_numbers")
+
     document.querySelectorAll('.btn_number').forEach(btn => {
         btn.style.pointerEvents = "none"
     })
 }
+
+
+// Event Listerners
+btn_start.addEventListener("click", () => startGames())
+btn_restart.addEventListener("click", () => restartGames())
